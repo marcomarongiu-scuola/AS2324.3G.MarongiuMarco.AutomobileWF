@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AS2324.3G.Prof.AutomobileWF", "AS2324.3G.Prof.AutomobileWF\AS2324.3G.Prof.AutomobileWF.csproj", "{0CA102B2-CD83-4F96-BE88-A41B655B97FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AS2324.3G.Prof.AutomobileWF", "AS2324.3G.Prof.AutomobileWF\AS2324.3G.Prof.AutomobileWF.csproj", "{0CA102B2-CD83-4F96-BE88-A41B655B97FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "audio", "audio", "{F0300753-4F6F-4448-8EC2-81C2A2F88793}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\Downloads\goofy-ahh-car-horn-200870.wav = ..\..\..\..\..\Downloads\goofy-ahh-car-horn-200870.wav
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
