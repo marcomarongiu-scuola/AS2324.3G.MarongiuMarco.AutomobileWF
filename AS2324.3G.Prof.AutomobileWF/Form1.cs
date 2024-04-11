@@ -24,6 +24,7 @@ namespace AS2324._3G.Prof.AutomobileWF
         private void btnAccellera_Click(object sender, EventArgs e)
         {
             velocita += stepAccellerazione;
+            lblVelocita.Text = velocita + " km/h";
 
             monitor();
         }
@@ -41,7 +42,12 @@ namespace AS2324._3G.Prof.AutomobileWF
             prbVelocita.Value = (int)velocita;
             if (grbComandi.Enabled = true)
             {
-                if(chkCinture.Checked)
+                if (chkCinture.Checked == false)
+                {
+                    lstMonitor.Items.Clear();
+                    string cinture = "NON HAI ALLACCIATO LE CINTURE";
+                    lstMonitor.Items.Add(cinture);
+                }
             }
         }
 
