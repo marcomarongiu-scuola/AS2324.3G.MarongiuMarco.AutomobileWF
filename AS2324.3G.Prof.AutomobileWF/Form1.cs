@@ -10,6 +10,8 @@ namespace AS2324._3G.Prof.AutomobileWF
 
         double velocita = 0;
 
+        double vento = 0;
+        Random random = new Random();
         public Form1()
         {
             InitializeComponent();
@@ -23,7 +25,9 @@ namespace AS2324._3G.Prof.AutomobileWF
 
         private void btnAccellera_Click(object sender, EventArgs e)
         {
-            velocita += stepAccellerazione;
+            vento=random.Next(-1,3);
+            label1.Text = "Vento " + vento*10 + " km/h";
+            velocita += stepAccellerazione + vento;
             lblVelocita.Text = velocita + " km/h";
 
             monitor();
@@ -31,8 +35,10 @@ namespace AS2324._3G.Prof.AutomobileWF
 
         private void btnFrena_Click(object sender, EventArgs e)
         {
-            velocita += stepFrenata;
-
+            velocita += stepFrenata + vento;
+            vento = random.Next(-1, 3);
+            label1.Text = "Vento " + vento*10 + " km/h";
+            lblVelocita.Text = velocita + " km/h";
             monitor();
         }
 
